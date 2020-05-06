@@ -17,7 +17,9 @@ TODO
 This template sets up Go entirely inside a Docker image. To test it, make sure you have [Docker](https://docker.com) installed and run the below command from the root of this repository:
 
 ```console
-$ docker build -f ./.devcontainer/Dockerfile .
+$ cd .devcontainer
+$ docker build .
+$ cd ..
 ```
 
 >When you run the command, make sure to remove the leading `$`
