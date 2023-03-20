@@ -6,7 +6,7 @@ useradd -m user
 su user
 
 # install go
-VERSION='1.14'
+VERSION='1.20'
 OS='linux'
 ARCH='amd64'
 
@@ -21,7 +21,6 @@ echo "Go version ${INSTALLED_GO_VERSION} is installed"
 echo "Getting development tools"
 go get -u golang.org/x/tools/gopls
 go get -u github.com/go-delve/delve/cmd/dlv
-go get -u github.com/rakyll/hey
 
 # vscode-go dependencies 
 echo "Getting dependencies for the vscode-go plugin "
@@ -34,7 +33,7 @@ go get -u -v github.com/mdempsky/gocode
 go get -u -v github.com/ramya-rao-a/go-outline
 go get -u -v github.com/rogpeppe/godef
 go get -u -v github.com/sqs/goreturns
-go get -u -v github.com/uudashr/gopkgs/cmd/gopkgs
+go get -u -v github.com/uudashr/gopkgs/v2/cmd/gopkgs
 go get -u -v github.com/zmb3/gogetdoc
 go get -u -v golang.org/x/lint/golint
 go get -u -v golang.org/x/tools/cmd/gorename
