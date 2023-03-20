@@ -1,6 +1,7 @@
 {
     "name": "Codespaces Go Template Repository",
     "extensions": [
+        "GitHub.codespaces",
         "ms-vsliveshare.vsliveshare",
         "visualstudioexptteam.vscodeintellicode",
         "golang.go"
