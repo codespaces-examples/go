@@ -16,8 +16,8 @@ INSTALLED_GO_VERSION=$(go version)
 
 # install gopls, dlv, hey
 echo "Getting development tools"
-go install -u golang.org/x/tools/gopls@latest
-go install -u github.com/go-delve/delve/cmd/dlv@latest
+go install -v golang.org/x/tools/gopls@latest
+go install -v github.com/go-delve/delve/cmd/dlv@latest
 
 
 # vscode-go dependencies 
