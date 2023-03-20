@@ -1,5 +1,5 @@
 # install curl, git, ...
-#apt-get update
+apt-get update
 apt-get install -y curl git jq
 
 useradd -m user
@@ -10,12 +10,12 @@ VERSION='1.20.2'
 OS='linux'
 ARCH='amd64'
 
-curl -OL https://dl.google.com/go/go${VERSION}.${OS}-${ARCH}.tar.gz
-tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
-rm go$VERSION.$OS-$ARCH.tar.gz
+#curl -OL https://dl.google.com/go/go${VERSION}.${OS}-${ARCH}.tar.gz
+#tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
+#rm go$VERSION.$OS-$ARCH.tar.gz
 
 INSTALLED_GO_VERSION=$(go version)
-echo "Go version ${INSTALLED_GO_VERSION} is installed"
+ # echo "Go version ${INSTALLED_GO_VERSION} is installed"
 
 # install gopls, dlv, hey
 echo "Getting development tools"
