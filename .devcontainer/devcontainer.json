@@ -1,6 +1,6 @@
 {
     "name": "Codespaces Go Template Repository",
-    "extensions": [
+    "customizations/vscode/extensions": [
         "coenraads.bracket-pair-colorizer-2",
         "eamodio.gitlens",
         "github.vscode-pull-request-github",
@@ -11,10 +11,15 @@
         "ms-vscode.go"
     ],
     "dockerFile": "Dockerfile",
-    "settings": {
+    "customizations/vscode/settings": {
         "files.exclude": {
             "**/CODE_OF_CONDUCT.md": true,
             "**/LICENSE": true
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/sshd:1": {
+            "version": "latest"
         }
     }
 }
