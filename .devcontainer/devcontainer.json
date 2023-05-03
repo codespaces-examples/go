@@ -9,7 +9,6 @@
       }
   },
   "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
-  "postCreateCommand": "bash .devcontainer/postCreateCommand.sh",
   "features": {
     "golang": "latest"
   },
@@ -18,7 +17,6 @@
         "extensions": [
             "GitHub.codespaces",
             "GitHub.copilot",
-            "ms-vsliveshare.vsliveshare",
             "visualstudioexptteam.vscodeintellicode",
             "golang.go",
         ]
