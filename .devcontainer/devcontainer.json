@@ -1,16 +1,25 @@
 {
-    "name": "Codespaces Go Template Repository",
-    "extensions": [
-        "GitHub.codespaces",
-        "ms-vsliveshare.vsliveshare",
-        "visualstudioexptteam.vscodeintellicode",
-        "golang.go"
-    ],
-    "dockerFile": "Dockerfile",
-    "settings": {
-        "files.exclude": {
-            "**/CODE_OF_CONDUCT.md": true,
-            "**/LICENSE": true
-        }
+  "name": "Codespaces Go Template Repository",
+  "build": {
+      "dockerfile": "Dockerfile",
+      // Update 'VARIANT' to pick an Ubuntu version: jammy / ubuntu-22.04, focal / ubuntu-20.04, bionic /ubuntu-18.04
+      // Use ubuntu-22.04 or ubuntu-18.04 on local arm64/Apple Silicon.
+      "args": {
+          "VARIANT": "ubuntu-22.04"
+      }
+  },
+  "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+  "features": {
+    "golang": "latest"
+  },
+  "customizations": {
+    "vscode": {
+        "extensions": [
+            "GitHub.codespaces",
+            "GitHub.copilot",
+            "visualstudioexptteam.vscodeintellicode",
+            "golang.go",
+        ]
     }
+  }
 }
