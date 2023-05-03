@@ -9,7 +9,7 @@
       }
   },
   "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
-  "postCreateCommand": "bash scripts/postCreateCommand.sh",
+  "postCreateCommand": "bash .devcontainer/postCreateCommand.sh",
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
     "golang": "latest"
