@@ -16,7 +16,6 @@
     "vscode": {
         "extensions": [
             "GitHub.codespaces",
-            "GitHub.copilot",
             "visualstudioexptteam.vscodeintellicode",
             "golang.go",
         ]
